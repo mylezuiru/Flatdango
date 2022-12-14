@@ -1,8 +1,8 @@
 // Function used to fetch data from JSON server (db.json file)
 function fetchMoviesList(){
-    fetch("http://localhost:3000/films")
+    fetch("https://api.jsonbin.io/v3/b/63999b2adfc68e59d567c4c2")
     .then(response => response.json())
-    .then(data => generateMovieList(data))
+    .then(data => generateMovieList(data.record.films))
 }
 
 /*
