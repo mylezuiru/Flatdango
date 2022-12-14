@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatdango</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="styleshhet" href="/style.css">
+</head>
+<body  class="p-3 mb-2 bg-info text-dark">
+
+<!--Create the nav Bar-->
+<nav class="navbar" style="background-color: #432181;">
+    <div class="container">
+        <a class="navbar-brand">
+            <class="d-inline-block">
+            <h1>Flatdango Movies Theatre</h1>
+        </a>
+      </nav>
+
+<div class="row">
+    <!--Creates a list to the left side of the webpage-->
+        <div class="col-4 mt-2">
+        <h3 style="text-align: left; color:rgb(29, 143, 105)">Movies List</h3>
+        <ul class="list-group" id="films">
+        </ul>
+        
+        </div>
+
+    <!--Create divs for storing movie details to the right side of webpage-->
+    <div class="col-8" id="movie_details">
+        
+        <h3 style="text-align: center; color:rgb(47, 78, 18)">Movies Details</h3>
+
+        <div class="row mt-3">
+            <p style="text-align: center; color: rgb(0, 0, 0)"> click on a movie on the list to the left to display its details.</p> 
+                
+            <!--div for displaying move poster and book ticket form-->
+                <div class="col-4" id="movie_image">
+                </div>
+
+            <!--div for displaying movie description-->
+                <div class="col-8" id="movie_description">
+                </div>
+                <button type="button" class="btn btn-danger mt-2 " id="delete_movie" style="visibility:hidden; width: 15%">Delete Movie</button>
+        </div>
+        <div class="row mt-3" id="book_form">  
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript" src="index.js"></script>    
+</body>
+</html>
